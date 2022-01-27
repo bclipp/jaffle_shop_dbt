@@ -6,7 +6,7 @@ with payments as (
         PAYMENTMETHOD,
         amount / 100 as amount
 
-    from stripe_payments
+    from {{ source('jaffle_shop', 'stripe_payments') }}
 
 )
 
