@@ -1,5 +1,4 @@
 install:
-DBT intsall:
 
 ```
 pip install dbt-sqlserver
