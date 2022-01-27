@@ -1,11 +1,12 @@
 install:
 DBT intsall:
 
+```
 pip install dbt-sqlserver
 pip install dbt-core
+```
 
-ODBC driver: ODBC Driver 17 for SQL Server
-https://docs.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver15
+[ODBC driver: ODBC Driver 17 for SQL Server](https://docs.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver15)
 
 
 
