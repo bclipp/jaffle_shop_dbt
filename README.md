@@ -1,15 +1,40 @@
-Welcome to your new dbt project!
 
-### Using the starter project
+
+### Using the azure sql server example projects
+
+First setup  ~/.dbt/profiles.yml 
+dw_dev:
+  target: dev
+  outputs:
+    dev:
+      type: sqlserver
+      driver: 'ODBC Driver 17 for SQL Server'
+      server: srv-ssc.database.windows.net
+      port: 1433
+      schema: dbo
+      user: ssc_admin
+      password: <fill me in>
+      database: db-ssc
+
+
+
 
 Try running the following commands:
-- dbt run
-- dbt test
 
+[CLI DOC](https://docs.getdbt.com/reference/dbt-commands)
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+for Docs:
+```
+dbt dbt docs generate
+dbt docs serve --port 8002
+```
+
+for tests
+```
+dbt test
+```
+
+for building out your models:
+```
+dbt run
+```
