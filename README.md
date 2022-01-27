@@ -2,7 +2,8 @@
 
 ### Using the azure sql server example projects
 
-First setup  ~/.dbt/profiles.yml 
+First setup  ~/.dbt/profiles.yml   
+```
 dw_dev:
   target: dev
   outputs:
@@ -16,7 +17,7 @@ dw_dev:
       password: <fill me in>
       database: db-ssc
 
-
+```
 
 
 Try running the following commands:
