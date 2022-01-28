@@ -7,5 +7,17 @@ sources:
 
     tables:
       - name: jaffle_shop_customers
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
       - name: jaffle_shop_orders
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
       - name: stripe_payments
+
+  
