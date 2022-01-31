@@ -1,4 +1,3 @@
- {{ config( as_columnstore = false, ) }}
 
 with orders as (
 
