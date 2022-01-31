@@ -1,3 +1,4 @@
+ {{ config( as_columnstore = false, ) }}
 with customers as (
 
     select

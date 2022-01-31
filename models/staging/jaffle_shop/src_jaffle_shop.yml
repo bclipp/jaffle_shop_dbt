@@ -20,4 +20,3 @@ sources:
               - not_null
       - name: stripe_payments
 
-  

@@ -41,3 +41,7 @@ models:
     staging:
       +materialized: view
       +as_columnstore: False
+
+tests:
+  jaffle_shop:
+    +as_columnstore: False

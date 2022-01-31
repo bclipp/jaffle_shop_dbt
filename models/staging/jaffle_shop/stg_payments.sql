@@ -1,3 +1,5 @@
+ {{ config( as_columnstore = false, ) }}
+
 with payments as (
 
     select
